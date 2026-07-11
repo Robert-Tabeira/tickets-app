@@ -67,7 +67,6 @@ export default function VistaTicket() {
       <div className="ticket print-area">
         <div className="ticket-head">
           <span className="num">#{ticket.numero}</span>
-          <span className="lista-badge">Lista {ticket.lista}</span>
         </div>
 
         <div className="item-meta" style={{ marginBottom: 10 }}>
@@ -81,7 +80,7 @@ export default function VistaTicket() {
             <div className="item-main">
               <div className="item-name">{i.nombre}</div>
               <div className="item-meta">
-                {i.cantidad} x {formatoPesos(i.precio_con_iva)} (IVA {i.iva}%)
+                {i.cantidad} x {formatoPesos(i.precio_con_iva)}
               </div>
             </div>
             <div className="item-amount">{formatoPesos(i.total_linea)}</div>
